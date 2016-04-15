@@ -7,7 +7,7 @@ $bleu_clair : #008cba;
 $browser-context: 16; // Default
 
 @function em($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}em;
+	@return #{$pixels/$context}em;
 }
 
 .blog {
@@ -26,9 +26,9 @@ $browser-context: 16; // Default
 
 .article {
 	padding: 12px;
-	border: solid 1px $blanc;
+	position: relative;
 	margin: 0 auto;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 30px;
 }
@@ -36,6 +36,7 @@ $browser-context: 16; // Default
 	display: inline-block;
 	width: 200px;
 	vertical-align: top;
+	margin-right: 20px;
 
 	img {
 		max-width: 100%;
@@ -45,6 +46,7 @@ $browser-context: 16; // Default
 .article-preview {
 	display: inline-block;
 	max-width: 700px;
+	height: 200px;
 	position: relative;
 
 	h2 {
@@ -55,8 +57,6 @@ $browser-context: 16; // Default
 .page-blog {
 	max-width: 1200px;
 }
-
-
 
 .article-page {
 	padding: 5px;
@@ -100,11 +100,23 @@ $browser-context: 16; // Default
 .btn_article {
 	transition: 0.4s;
 	text-align: center;
-	display: block;
-	background-color: white;
-	position: relative;
-	border: none;
-	padding: 10px 15px;
-	font-size: em(16);
+	padding: 15px 20px;
+	font-size: em(18);
 	box-sizing: border-box;
+	background : #0078a0;
+	border: solid 1px #0078a0;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+
+	.btn_article {
+		&:hover {
+			color: #0078a0;
+			background-color: transparent;
+		}
+	}
 }

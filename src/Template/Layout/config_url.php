@@ -1,4 +1,4 @@
 <?php
-	define('WEB_URL', 'http://localhost/guillaume/Webarranco_new');
-	define('SITE_URL', 'http://localhost/guillaume/Webarranco_new');
+	define('WEB_URL', 'http://localhost/WebarrancoV3');
+	define('SITE_URL', 'http://localhost/WebarrancoV3');
 	define('ENV', 'dev');

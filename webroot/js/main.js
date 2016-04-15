@@ -56,6 +56,8 @@ $(document).ready(function () {
 			$('.link-contact').addClass('active');
 		} else if ($('.page-blog').length !== 0) {
 			$('.link-blog').addClass('active');
+		} else if ($('.page-fun').length !== 0) {
+			$('.link-fun').addClass('active');
 		}
 	})();
 
@@ -80,8 +82,8 @@ $(document).ready(function () {
 	if ($('.page-about').length != 0) getPSN();
 
 	// Déclenche l'animation des graphiques de compétences au scroll de la page
-	$(window).off('scroll');
-	$(window).on('scroll', function () {
+	/*$(window).off('scroll');
+	$(window).on('scroll', function () {*/
 		$('.graphic-bar-html5').width(180);
 		setTimeout(function () {
 			$('.graphic-bar-css3').width(180);
@@ -98,7 +100,7 @@ $(document).ready(function () {
 		setTimeout(function () {
 			$('.graphic-bar-curieux').width(220);
 		}, 1000);
-	});
+	// });
 
 	// Fonction utilisée par la réussite du Cheat Code
 

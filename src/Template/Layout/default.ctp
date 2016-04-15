@@ -71,7 +71,7 @@
                         <a class="link-nav link-about cbutton" href="<?=WEB_URL?>/about">A Propos</a>
                     </li>
                     <li>
-                        <a class="link-nav link-about cbutton" href="<?=WEB_URL?>/fun">Fun</a>
+                        <a class="link-nav link-fun cbutton" href="<?=WEB_URL?>/fun">Fun</a>
                     </li>
                 </ul>
 
@@ -87,7 +87,7 @@
                         <li><a class="link-nav link-skills" href="<?=WEB_URL?>/skills">Compétences</a></li>
                         <li><a class="link-nav link-projects" href="<?=WEB_URL?>/projects">Projets</a></li>
                         <li><a class="link-nav link-about" href="<?=WEB_URL?>/about">A Propos</a></li>
-                        <li><a class="link-nav link-about" href="<?=WEB_URL?>/fun">Fun</a></li>
+                        <li><a class="link-nav link-fun" href="<?=WEB_URL?>/fun">Fun</a></li>
                     </ul>
                 </div>
             </nav>
@@ -101,12 +101,6 @@
 
         <footer id="footer" role="contentinfo">
             <div>© Copyright Webarranco 2015</div>
-            
-            <div class="separator"></div>
-
-            <div class="footer-contact">
-                <a href="<?=WEB_URL?>/contact" title="Se rendre sur la page de contact">Contact</a>
-            </div>
         </footer>
 
         <!-- Script qui va permettre d'écouter le micro de l'utilisateur si celui-ci l'a voulu, et lui permettre de naviguer en fonction des pages qu'il énoncera -->

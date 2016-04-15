@@ -97,25 +97,27 @@ $(document).ready(function() {
 
 				var tab_dates = new Array();
 
-				for (var p = 0; p < response.projects.length; p++) {
+				console.log(response);
+
+				for (var p = 0; p < response.length; p++) {
 
 					projects_content = 
 						'<div class="project" data-project="'+(p+1)+'">'+
 							'<div class="project-picture">' +
-								'<img src="'+response.projects[p].Project.Cover +'" alt="'+response.projects[p].Project.Alt +'" />' +
+								'<img src="'+response[p].Cover +'" alt="'+response[p].Alt +'" />' +
 							'</div>' +
 							'<div class="project-content">' +
-								'<h2 class="project-title">'+response.projects[p].Project.Name +'</h2>' +
+								'<h2 class="project-title">'+response[p].Name +'</h2>' +
 							
 								'<p class="project-description">' +
-									response.projects[p].Project.Content +
+									response[p].Content +
 								'</p>'+
 
 								'<div class="project-technos">' +
-									response.projects[p].Project.technos +
+									response[p].technos +
 								'</div>'+
 								'<br />' +
-								'<a href="'+response.projects[p].Project.link_website +'" target="_blank" class="button">Voir le projet</a>' +
+								'<a href="'+response[p].link_website +'" target="_blank" class="button">Voir le projet</a>' +
 							'</div>' +
 							
 						'</div>'
@@ -127,11 +129,11 @@ $(document).ready(function() {
 						'<div class="timeline-line">'
 					;
 
-					if(tab_dates.indexOf(response.projects[p].Project.date) == -1) {
-						tab_dates.push(response.projects[p].Project.date);
+					if(tab_dates.indexOf(response[p].date) == -1) {
+						tab_dates.push(response[p].date);
 						timeline_content +=
 							'<div class="timeline-date">' +
-								'<span class="date">'+response.projects[p].Project.date +'</span>' +
+								'<span class="date">'+response[p].date +'</span>' +
 							'</div>'
 						;
 					}					
@@ -140,8 +142,8 @@ $(document).ready(function() {
 						'</div>' +
 
 						'<div class="timeline-circle" data-timeline="'+(p+1)+'">'+
-							'<div class="bubble">'+response.projects[p].Project.Name +'</div>' +
-							'<img src="'+response.projects[p].Project.Cover +'" alt="'+response.projects[p].Project.Alt +'"/>' +
+							'<div class="bubble">'+response[p].Name +'</div>' +
+							'<img src="'+response[p].Cover +'" alt="'+response[p].Alt +'"/>' +
 						'</div>' +
 						'<div class="timeline-line"></div>'
 					;
