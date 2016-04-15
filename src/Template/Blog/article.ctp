@@ -1,7 +1,19 @@
 <link rel="stylesheet" href="<?=$this->request->base?>/css/prism.css">
+<link rel="stylesheet" href="<?=$this->request->base?>/css/blog.css">
+
+<style>
+	body, p {
+		font-family: 'Georgia';
+	}
+
+	p {
+		font-size: 14px;
+	}
+</style>
+
 <script src="<?=$this->request->base?>/js/prism.js"></script>
 
-<div class="blog page-blog" role="main" style="max-width: 600px;">
+<div class="blog page-blog" role="main">
 	<div class="article-page">
 
 		<div class="right">

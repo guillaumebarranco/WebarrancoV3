@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="<?=$this->request->base?>/css/blog.css">
+
 <div class="blog page-blog" role="main">
     <h1>Le Blog de Webarranco</h1>
 

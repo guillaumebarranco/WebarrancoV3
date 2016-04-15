@@ -1,5 +1,3 @@
-@import "compass";
-
 @font-face {
     font-family: "SF Cosmic Age";
     src: url(font/SFCosmicAge.otf);
@@ -219,12 +217,12 @@ canvas {
 }
 
 .blur {
-	@include transition(0.4s);
+	transition: 0.4s;
 	opacity: 0.5;
 }
 
 .no-blur {
-	@include transition(0.4s);
+	transition: 0.4s;
 	opacity: 1;
 }
 
@@ -247,7 +245,7 @@ canvas {
 		vertical-align: top;
 	}
 	.graphic-bar {
-		@include transition(0.6s);
+		transition: 0.6s;
 		height: 20px;
 		background-color: #008cba;
 		width: 0px;
@@ -318,13 +316,13 @@ canvas {
 			}
 
 		a {
-			@include transition(0.4s);
+			transition: 0.4s;
 			display: block;
 			text-align: center;
 			color: $blanc;
 			background-color: grey;
 			padding: 0 14px;
-			@include border-radius(50px);
+			border-radius: (50px);
 		}
 	}
 	li:first-child {
@@ -372,7 +370,7 @@ canvas {
 	.cheat {
 		width: 35px;
 		height: 35px;
-		@include border-radius(50px);
+		border-radius: (50px);
 		background-color: #F4FA58;
 		display: inline-block;
 		vertical-align: top;
@@ -461,94 +459,10 @@ canvas {
 }
 
 /*********************/
-/* 		 BLOG    	 */
+/*  	CONTACT  	 */
 /*********************/
 
-.blog {
-	width: 80%;
-	max-width: 1200px;
-	margin: 0 auto;
-	background-color: #333;
-	padding: 5px;
-	margin-bottom: 50px;
 
-	h1 {
-		text-align: center;
-		margin-bottom: 50px;
-	}
-}
-
-.article {
-	padding: 12px;
-	border: solid 1px $blanc;
-	width: 90%;
-	margin: 0 auto;
-	margin-bottom: 30px;
-}
-.cover {
-	display: inline-block;
-	width: 200px;
-	vertical-align: top;
-
-	img {
-		max-width: 100%;
-	}
-}
-
-.article-preview {
-	display: inline-block;
-	max-width: 700px;
-	position: relative;
-
-	h2 {
-		margin-top: 0;
-	}
-}
-
-.article-page {
-	padding: 5px;
-	max-width: 600px;
-	p  {
-		width: 90%;
-		text-align: justify;
-	}
-
-	ul {
-		width: 90%;
-		margin-top: 15px;
-
-		li {
-			//list-style: square;
-			margin-left: 15px;
-
-			ul {
-				margin-top: 0;
-			}
-		}
-	}
-
-	.date {
-		text-align: right;
-		display: block;
-		margin-bottom: 15px;
-	}
-
-	pre {
-		margin: 15px 0 !important;
-	}
-}
-
-.btn_article {
-	@include transition(0.4s);
-	text-align: center;
-	display: block;
-	background-color: white;
-	position: relative;
-	border: none;
-	padding: 10px 15px;
-	font-size: em(16);
-	box-sizing: border-box;
-}
 
 .right {
 	text-align: right;
@@ -600,7 +514,7 @@ canvas {
 	}
 
 	input[type=submit] {
-		@include transition(0.4s);
+		transition: 0.4s;
 		background-color: $noir;
 		font-family: "Oswald";
 		color: $blanc;
@@ -671,7 +585,7 @@ canvas {
 }
 
 .timeline-circle {
-	@include transition(0.4s);
+	transition: 0.4s;
 	width: 70px;
 	height: 70px;
 	background-color: $noir;
@@ -689,13 +603,13 @@ canvas {
 	}
 
 	img {
-		@include transition(0.4s);
-		@include border-radius(50px);
+		transition: 0.4s;
+		border-radius: (50px);
 		max-width: 70px;
 	}
 
 	.bubble {
-		@include transition(0.4s);
+		transition: 0.4s;
 		position: absolute;
 		top: -56px;
 		left: -40px;
@@ -703,7 +617,7 @@ canvas {
 		background-color: rgb(22,22,22);
 		background-color: rgba(22,22,22, 0.6);
 		padding: 5px;
-		@include border-radius(6px);
+		border-radius: (6px);
 		display: none;
 		text-align: center;
 	}
@@ -789,13 +703,13 @@ $width_bloc : 150px;
 	width: $width_bloc;
 	height: $width_bloc;
 	position: absolute;
-	@include transition(0.4s);
+	transition: 0.4s;
 	left:0px;
-	@include rotate(45deg);
+	transform:rotate(45deg);
 	opacity: 0.3;
 
 	div {
-		@include transition(0.4s);
+		transition: 0.4s;
 		display: block;
 		text-align: center;
 		padding-top: 20px;
@@ -812,7 +726,7 @@ $width_bloc : 150px;
 			z-index: 2;
 
 			div {
-				@include transition(0.4s);
+				transition: 0.4s;
 				display: block;
 				text-align: center;
 				padding-top: 20px;
@@ -1117,7 +1031,7 @@ $width_bloc : 150px;
 
 	  	img {
 	  		max-width: 150px;
-	  		@include border-radius(0px);
+	  		border-radius: (0px);
 	  	}
 	  }
 	  .bubble {
@@ -1139,8 +1053,8 @@ $width_bloc : 150px;
 		li {
 			a {
 				&:hover {
-					@include transition(0.4s);
-					@include rotate(360deg);
+					transition: 0.4s;
+					transform: rotate(360deg);
 				}
 			}
 		}
@@ -1180,7 +1094,7 @@ $width_bloc : 150px;
 
 	.btn_article {
 		&:hover {
-			@include transition(0.4s);
+			transition: 0.4s;
 			background : #0078a0;
 			color: white;
 		}
@@ -1189,7 +1103,7 @@ $width_bloc : 150px;
 	.style-input {
 		input[type=submit] {
 			&:hover {
-				@include transition(0.4s);
+				transition: 0.4s;
 				background : $blanc;
 				color: $noir;
 			}
@@ -1199,7 +1113,7 @@ $width_bloc : 150px;
 	.timeline-circle {
 		box-sizing: border-box;
 		&:hover {
-			@include transition(0.4s);
+			transition: 0.4s;
 			
 			img {
 				box-shadow: 5px 5px 13px 3px black;
@@ -1224,7 +1138,6 @@ $width_bloc : 150px;
 	color: #286aab;
 	font-size: 1.4em;
 	overflow: visible;
-	-webkit-transition: color 0.7s;
 	transition: color 0.7s;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
