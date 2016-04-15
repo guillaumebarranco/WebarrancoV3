@@ -1,0 +1,12 @@
+html,body {
+	background: black;
+}
+
+h2 {
+	color: white;
+	font-family: "Verdana";
+	position: absolute;
+	font-size: 15px;
+	width: 185px;
+	text-align: center;
+}
