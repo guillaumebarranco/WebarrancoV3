@@ -14,9 +14,9 @@
 			<h3 style="color:white;">HTML/CSS</h3>
 			<ul>
 				<li>HTML5/CSS3</li>
-				<li>Préprocesseurs : SASS(Compass) / LESS</li>
+				<li>Préprocesseurs : SASS(Gulp, Compass) / LESS</li>
 				<li>Frameworks : Zurb Foundation / Bootstrap</li>
-				<li>Compatibilité IE / Responsive</li>
+				<li>Compatibilité / Responsive / Accessibilité</li>
 			</ul>
 		</li>
 
@@ -24,7 +24,7 @@
 			<h3 style="color:white;">Javascript</h3>
 			<ul>
 				<li>Librairies : JQuery / Underscore.js</li>
-				<li>Frameworks : Angular JS / Node.js</li>
+				<li>Frameworks : AngularJS / Node.js</li>
 				<li>Outils : Grunt/Gulp/Bower/Babel</li>
 				<li>WebGL : Three.js (experiments)</li>
 			</ul>
@@ -33,11 +33,11 @@
 		<li class="skill">
 			<h3 style="color:white;">PHP / SQL</h3>
 			<ul>
-				<li>POO / PHP5</li>
+				<li>POO / PHP5,7</li>
 				<li>Modèle MVC</li>
-				<li>Frameworks : ZF2 / CakePHP / Symfony2</li>
+				<li>Frameworks : ZF2 / CakePHP2,3 / Symfony2</li>
 				<li>Doctrine et autres ORM</li>
-				<li>MySQL / NoSQL (experiments)</li>
+				<li>MySQL / NoSQL (MongoDB, Elasticsearch)</li>
 			</ul>
 		</li>
 
@@ -45,7 +45,7 @@
 			<h3 style="color:white;">Outils</h3>
 			<ul>
 				<li>Git (Github / Bitbucket)</li>
-				<li>Trello / Redmine</li>
+				<li>Trello / Redmine / Jira</li>
 				<li>Windows / Linux</li>
 				<li>Sublime Text</li>
 				<li>Bonus : Suite Adobe CS5+</li>

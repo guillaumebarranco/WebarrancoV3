@@ -21,7 +21,7 @@
         <!-- En fonction de l'environnement défini dans config_url.php, on met en place la version minifiée du CSS ou non -->
 
         <?php if(ENV === 'dev') { ?>
-            <?= $this->Html->css('foundation') ?>
+            <?= $this->Html->css('../bower_components/foundation/css/foundation') ?>
             <?= $this->Html->css('foundation-icons') ?>
             <?= $this->Html->css('lightbox') ?>
             <?= $this->Html->css('index') ?>
@@ -42,7 +42,7 @@
         <?php  if(isset($_GET['micro'])) echo '<script>autorisedMic = true;</script>'; ?>
 
         <!-- On inclue JQuery dans le head étant donné que certains scripts sont appelés par des pages spécifiques dans le content servi dynamiquement -->
-        <?= $this->Html->script('jquery-1.11.1') ?>
+        <?= $this->Html->script('../bower_components/jquery/dist/jquery.min') ?>
     </head>
 
     <body>
@@ -110,11 +110,11 @@
 
         <?php if(ENV === 'dev') { ?>
             <?= $this->Html->script('main') ?>
-            <?= $this->Html->script('modernizr.custom') ?>
-            <?= $this->Html->script('lightbox.min') ?>
+            <?= $this->Html->script('../bower_components/modernizr/modernizr') ?>
+            <!--<?= $this->Html->script('lightbox.min') ?>-->
             
             <!--For links nav hover effect -->
-            <?= $this->Html->script('classie') ?>
+            <?= $this->Html->script('hover_nav') ?>
             
         <?php } else { ?>
             <?= $this->Html->script('min') ?>

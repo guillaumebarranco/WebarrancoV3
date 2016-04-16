@@ -2,18 +2,9 @@
     font-family: "SF Cosmic Age";
     src: url(font/SFCosmicAge.otf);
 }
-@font-face {
-    font-family: "Oswald";
-    src: url(font/Oswald.otf);
-}
-@font-face {
-    font-family: "Open Sans";
-    src: url(font/OpenSans-Light.ttf);
-    src: url(font/OpenSans-Light.otf);
-}
 
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-// @import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 
 $color-triangle : #FACC2E;
 $blanc : #bbb;
@@ -155,6 +146,7 @@ footer {
 	border-top: solid 1px white;
 	padding: 20px;
 	box-sizing: border-box;
+	margin-top: 20px;
 
 	div {
 		display: inline-block;
@@ -175,18 +167,30 @@ footer {
 *	HOME
 */
 
-.bloc {
-	padding: 10px;
-	background-color: #333;
-	height: 500px;
+.flexrow {
+	display: flex;
 
-	h2, div {
-		text-align: center;
-	}
-	p {
-		text-align: justify;
+	.bloc {
+		width: 33%;
+		padding: 10px;
+		background-color: #333;
+		height: 500px;
+		margin: 30px 0 0 30px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		h2, div {
+			text-align: center;
+		}
+		p {
+			text-align: justify;
+		}
 	}
 }
+
+
 
 canvas {
 	z-index: -1;
@@ -269,8 +273,6 @@ canvas {
 		max-width: 200px;
 	}
 }
-
-
 
 .logo_svg {
 	width: 26px;
@@ -456,83 +458,6 @@ canvas {
 		background: url(img/prev.png) no-repeat;
 		background-size: cover;
 	}
-}
-
-/*********************/
-/*  	CONTACT  	 */
-/*********************/
-
-
-
-.right {
-	text-align: right;
-}
-.div-contact {
-	position: relative;
-	margin-bottom: 50px;
-	width: 100%;
-	max-width: 800px;
-	margin: 0 auto;
-	background-color: #333;
-	padding: 30px;
-	box-sizing: border-box;
-	margin-bottom: 50px;
-}
-.infos-contact {
-	color: black;
-	font-family: "Oswald";
-	font-size: em(20);
-}
-.call {
-	display: none;
-}
-
-.style-input {
-	width: 100%;
-	margin: 0 auto;
-
-	&.style-submit {
-		text-align: center;
-		margin-top: 25px;
-	}
-
-	input[type=text], input[type=email], textarea {
-		background-color: lighten(rgb(150,150,150), 15%);
-		background-color: lighten(rgba(150,150,150, 0.7), 15%);
-		color: white;
-		border: none;
-		font-family: "Oswald";
-	}
-	
-	label {
-		display: block;
-		width: 100px;
-		cursor: text;
-		font-size: em(18);
-		color: $bleu_fonce;
-		margin-bottom: 5px;
-	}
-
-	input[type=submit] {
-		transition: 0.4s;
-		background-color: $noir;
-		font-family: "Oswald";
-		color: $blanc;
-		border: solid 1px $noir;
-		cursor: pointer;
-		text-transform: uppercase;
-		padding: 20px 45px;
-		font-size: em(20);
-
-		&:hover {
-			background-color: $blanc;
-			color: $noir;
-		}
-	}
-	textarea {
-		resize: none;
-		height: 120px;
-	}	
 }
 
 /**************************************/
@@ -832,8 +757,6 @@ $width_bloc : 150px;
 			}
 		}	
 	}
-
-	
 }
 
 .menu_mobile {
@@ -883,6 +806,14 @@ $width_bloc : 150px;
 				}
 			}
 		}
+	}
+}
+
+.page-fun {
+	text-align: center;
+
+	div {
+		margin-top: 20px;
 	}
 }
 
@@ -964,6 +895,7 @@ $width_bloc : 150px;
 	*/	
 
 	footer {
+
 		div {
 			display: inline-block;
 			vertical-align: top;

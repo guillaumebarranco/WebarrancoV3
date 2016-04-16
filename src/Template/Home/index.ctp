@@ -4,7 +4,7 @@
 
         <p>
             Un projet à proposer, une idée impossible à mettre en oeuvre ? <br />
-            Rien n'est impossible ! N'hésitez pas à <a href="<?=$this->request->base?>/contact">me contacter</a> pour n'importe quelle demande que ce soit !
+            Rien n'est impossible ! N'hésitez pas à <a target="_blank" href="<?=$this->request->base?>/img/CV_Barranco_Guillaume.pdf">me contacter</a> pour n'importe quelle demande que ce soit !
         </p>
     </div>
 
@@ -13,8 +13,8 @@
 
 <section class="wrapper" role="main">
 
-    <div class="row">
-        <div class="bloc large-4 columns">
+    <div class="flexrow">
+        <div class="bloc">
             <h2>Qui suis-je ?</h2>
             <div>
                 <img class="willchange" src="img/build/myPicture.jpg" alt="Photo de Guillaume Barranco" width="140" class="myPicture" />
@@ -26,7 +26,7 @@
             </p>
         </div>
 
-        <div class="bloc large-4 columns">
+        <div class="bloc">
             <h2>Mes compétences</h2>
             <p>
                 Toutes les technologies de développement web les plus connues (HTML5, CSS3, Javascript, PHP, SQL), agrémenté des sciences d'intégration étudiées pour le plaisir de se parfaire (Référencement, Ergonomie, Accessibilité) ainsi que de frameworks bien utiles. Vous pouvez les trouver et mieux les comprendre sur la <a href="/skills">page de mes compétences</a>.
@@ -65,7 +65,7 @@
             </ul>
         </div>
 
-        <div class="bloc large-4 columns">
+        <div class="bloc">
             <h2>Blog de Webarranco</h2>
             <p>
                 Lorsqu'on a appris sur le web, avec des tutoriels, des vidéos, des supers articles qu'on a vite gardé dans les favoris, on a envie de partager son évolution avec les autres. L'expérience, les avis professionnels peuvent aider bon nombre de jeunes développeurs. C'est ainsi qu'est né <a href="/blog" title="Aller sur le Blog">mon Blog</a>, que vous pourrez observer se remplir au fur et à mesure.
@@ -76,8 +76,8 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="bloc large-4 columns">
+    <div class="flexrow">
+        <div class="bloc">
             <h2>Mes Projets</h2>
             <p>
                 Dernier projet en date : 
@@ -88,7 +88,7 @@
             </p>
         </div>
 
-        <div class="bloc large-4 columns">
+        <div class="bloc">
             <h2>Me Contacter</h2>
 
             <div>guillaume.barranco8@hotmail.fr</div>
@@ -151,7 +151,7 @@
             <a class="download_CV" title="Télécharger mon CV" target="_blank" href="img/CV_Barranco_Guillaume.pdf">Télécharger mon CV</a>
         </div>
 
-        <div class="bloc large-4 columns">
+        <div class="bloc">
             <h2>Bonus</h2>
             <ul class="like">J'aime :
                 <li>- Manger</li>
@@ -184,3 +184,5 @@
         </div>
     </div>
 </section>
+
+<?= $this->Html->script('bubbles') ?>

@@ -21,7 +21,7 @@ class ProjectsController extends AppController {
 	public function view($type = 'Professionnel') {
 		$this->Jsonification();
 		
-		$projects = $this->Project->find('all')/*->where(['Project.Type' => $type])*/->toArray();
+		$projects = $this->Project->find('all')->where(['Project.Type' => $type])->order(['date' => 'DESC'])->toArray();
 
 		// var_dump($projects);
 		// die;

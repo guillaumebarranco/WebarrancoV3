@@ -1,0 +1,22 @@
+{
+  "name": "webroot",
+  "homepage": "https://github.com/guillaumebarranco/WebarrancoV3",
+  "authors": [
+    "guillaumebarranco <guillaume.barranco8@hotmail.fr>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "foundation": "^5.5.3",
+    "foundation-icons": "*"
+  }
+}
