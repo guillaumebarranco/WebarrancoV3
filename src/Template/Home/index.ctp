@@ -21,7 +21,7 @@
             </div>
             <p>
                 Un jeune développeur passionné par le web depuis des années et actuellement en Licence Chef de Projet Multimedia travaillant pour l'entreprise <a target="_blank" title="Site de l'entreprise Weblib" href="http://weblib.eu/">Weblib</a>. <br />
-                Un inconditionnel fan de manga, les plus curieux et passionnés pourront en trouver <a href="http://webarranco.fr/read_mangas/" title="Liste des mangas lus">un exemple ici</a> !<br />
+                Un inconditionnel fan de manga, les plus curieux et passionnés pourront en trouver la liste bientôt sur l'API Manga que je suis en train de créer !<br />
                 Un pro avant tout, un jeune curieux et avide de connaissances qui ne demande qu'à apprendre et transmettre après.
             </p>
         </div>
@@ -92,9 +92,9 @@
             <h2>Me Contacter</h2>
 
             <div>guillaume.barranco8@hotmail.fr</div>
-            <a href="<?=$this->request->base?>/contact" title="Se rendre sur la page de contact" class="mail">
+            <!-- <a href="<?=$this->request->base?>/contact" title="Se rendre sur la page de contact" class="mail">
                 <i class="fi-mail size-80"></i>
-            </a>
+            </a> -->
 
             <ul class="socials">
                 <li class="twitter">
